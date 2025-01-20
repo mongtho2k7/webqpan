@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình ảnh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Verdana", sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0073e6, #003d99);
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            border-bottom: 4px solid #003d99;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: block;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #003d99;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .media {
+            margin-bottom: 30px;
+        }
+
+        .media img,
+        .media iframe {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .media p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: justify;
+        }
+
+        .media iframe {
+            height: 560px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #003d99;
+            color: white;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Website Cá Nhân</h1>
+        <p>Chào mừng bạn đến với không gian chia sẻ hình ảnh</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="./index.html">Trang Chủ</a>
+        <a href="./index.html">Giới Thiệu</a>
+        <a href="./index.html">Chủ Đề</a>
+        <a href="./index.html">Tài Liệu</a>
+        <a href="./pageimg.html">Hình ảnh</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Images Section -->
+        <section id="images">
+            <h2>Hình Ảnh</h2>
+
+            <!-- First Image -->
+            <div class="media">
+                <img src="https://file3.qdnd.vn/data/images/0/2022/05/16/thuthuytv/hocvien.jpg"
+                    alt="Hình ảnh quốc phòng" />
+                <p>Hình ảnh một buổi học của học viên tại trường đào tạo quốc phòng, thể hiện sự nghiêm túc và tập trung
+                    trong quá trình huấn luyện.</p>
+            </div>
+
+            <!-- Second Image -->
+            <div class="media">
+                <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/12/20/tac-chien-dien-tu-17030528608611112594760.jpg"
+                    alt="Hình ảnh quân đội" />
+                <p>Hình ảnh quân đội trong một chiến dịch huấn luyện chiến tranh điện tử, thể hiện sự chuẩn bị kỹ càng
+                    cho các tình huống tác chiến hiện đại.</p>
+            </div>
+
+            <!-- Third Image -->
+            <div class="media">
+                <img src="https://cdn.giaoducthoidai.vn/images/f27fa019cf67b1fdeb90b4dd3b09699675a4916cd6ce45d67f2fccd1489610cbbcae2b465c98063cab48870dd3bd6298/qpan-3.jpg.webp"
+                    alt="Hình ảnh an ninh" />
+                <p>Hình ảnh minh họa về công tác bảo vệ an ninh quốc gia, thể hiện sự quan tâm và đầu tư của nhà nước
+                    vào việc bảo vệ trật tự xã hội.</p>
+            </div>
+
+            <!-- First Video -->
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/RBGNZxg5lT4"
+                    title="Lễ duyệt binh của QĐND Việt Nam 1985 | The military parade of Vietnam Army 1985"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Video ghi lại lễ duyệt binh của Quân đội Nhân dân Việt Nam năm 1985, một dịp để tôn vinh lực lượng vũ
+                    trang và khẳng định sức mạnh quốc phòng.</p>
+            </div>
+
+            <!-- Second Video -->
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/WhPCNXZmwLo"
+                    title="TOÀN CẢNH LỄ CHÀO CỜ TẠI LĂNG HỒ CHỦ TỊCH" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Video toàn cảnh lễ chào cờ tại Lăng Hồ Chủ tịch, một nghi lễ trang trọng thể hiện lòng tôn kính đối
+                    với Chủ tịch Hồ Chí Minh và di sản của người.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Website Cá Nhân - Nguyễn Thị Mộng Thơ - Lớp 12XH1</p>
+        <p><a href="#">Chính Sách Quyền Riêng Tư</a> | <a href="#">Liên Hệ</a></p>
+    </footer>
+
+</body>
+
+</html>
